@@ -1,0 +1,8 @@
+{
+    "Insert arapp": {
+        "scope": "plaintext, javascript, html, css, typescript",
+        "prefix": "arapp",
+        "body": ["arapp"],
+        "description": "Snippet to insert the word 'arapp'"
+    }
+}
