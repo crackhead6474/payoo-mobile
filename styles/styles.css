@@ -1,0 +1,8 @@
+#MobileNumber{
+    background-color: white;
+    border-radius: 32px;
+    border: 1px solid gray;
+    padding: 8px;
+    width: 256px;
+    align-items: left;
+}

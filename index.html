@@ -6,15 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Tailwind CSS CDN -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-        <!--CSS CDN-->
-            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!--CSS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="styles/styles.css" rel="stylesheet">
 
 </head>
 
-<body>
-    <button class="btn-blue">Click</button>
+<body class="mt-10 mx-auto bg-[rgba(30,30,30,0.09)]">
+    <header class="flex flex-col justify-center items-center gap-15 relative ml-auto md:w-full">
+        <section class="flex justify-center items-center relative w-full">
+            <div class="bgActionimg absolute top-10 left-55 w-full">
+                <img src="assets/bg.png" alt="bgActionimg" class=class="absolute top-10 left-1/2 -translate-x-1/2" />
+            </div>
+        </section>
 
+
+        <section class="loginSec min-w-full flex flex-col justify-center items-start max-w-screen-sm mt-32 px-4">
+            <img src="assets/Group.png" alt="insideImg" class="absolute top-10 left-1/2 -translate-x-1/2">
+            </div>
+        </section>
+        <section class="loginSec min-w-full flex flex-col justify-center items-center max-w-vw ">
+
+            <div class="flex flex-col justify-center items-center gap-2 mb-4">
+                <h1 class="text-4xl font-bold">Welcome Back!</h1>
+                <p class="text-lg text-gray-600">Login to your account</p>
+                <h2>Mobile Number</h2>
+            </div>
+
+            <textarea name="MobileNumber" id="MobileNumber"
+                class="bg-white rounded-[32px] border border-gray-300 p-2 w-64"></textarea>
+
+            </div>
+            <div>
+                <h2>4 Digit Pin</h2>
+                <textarea name="Pin" id="Pin"
+                    class="bg-white rounded-[20px] border border-gray-300 p-2 w-64"></textarea>
+
+            </div>
+            <button>Login</button>
+        </section>
+        </section>
+
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
 </body>
 
 </html>
