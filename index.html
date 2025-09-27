@@ -5,54 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Tailwind CSS CDN -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Tailwind / DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <!--CSS CDN-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="styles/styles.css" rel="stylesheet">
-
 </head>
 
 <body class="mt-10 mx-auto bg-[rgba(30,30,30,0.09)]">
-    <header class="flex flex-col justify-center items-center gap-15 relative ml-auto md:w-full">
+    <header class="flex flex-col justify-center items-center gap-6 relative w-full">
         <section class="flex justify-center items-center relative w-full">
-            <div class="bgActionimg absolute top-10 left-55 w-full">
-                <img src="assets/bg.png" alt="bgActionimg" class=class="absolute top-10 left-1/2 -translate-x-1/2" />
+            <div class="bgActionimg absolute inset-x-0 top-10 w-full pointer-events-none">
+                <img src="assets/bg.png" alt="bgActionimg" class="w-full object-cover" />
             </div>
         </section>
 
 
-        <section class="loginSec min-w-full flex flex-col justify-center items-start max-w-screen-sm mt-32 px-4">
-            <img src="assets/Group.png" alt="insideImg" class="absolute top-10 left-1/2 -translate-x-1/2">
+    <section class="loginSec w-full flex flex-col justify-center items-center max-w-md mx-auto mt-32 px-4 relative z-10">
+            <div class="w-full flex justify-center mt-4">
+                <img src="assets/Group.png" alt="insideImg" class="w-40 sm:w-48 md:w-56 lg:w-64" />
             </div>
         </section>
-        <section class="loginSec min-w-full flex flex-col justify-center items-center max-w-vw ">
+        <section class="loginSec w-full flex flex-col justify-center items-center max-w-md mx-auto px-4">
 
-            <div class="flex flex-col justify-center items-center gap-2 mb-4">
+            <div class="flex flex-col justify-center items-center gap-2 mb-4 text-center">
                 <h1 class="text-4xl font-bold">Welcome Back!</h1>
                 <p class="text-lg text-gray-600">Login to your account</p>
-                <h2>Mobile Number</h2>
+                
             </div>
 
-            <textarea name="MobileNumber" id="MobileNumber"
-                class="bg-white rounded-[32px] border border-gray-300 p-2 w-64"></textarea>
+            
 
+            <div class="w-full mt-4 flex flex-col items-center">
+                <label for="MobileNumber" class="mb-2">Mobile Number</label>
+                <input 
+                    placeholder="Enter your mobile number"
+                    type="tel" 
+                    name="MobileNumber" 
+                    id="MobileNumber"
+                    inputmode="tel"
+                    class="bg-white rounded-[20px] border border-gray-300 p-2 w-40 sm:w-48 md:w-56 text-center" />
             </div>
-            <div>
-                <h2>4 Digit Pin</h2>
-                <textarea name="Pin" id="Pin"
-                    class="bg-white rounded-[20px] border border-gray-300 p-2 w-64"></textarea>
 
+            <div class="w-full mt-4 flex flex-col items-center">
+                <label for="Pin" class="mb-2">4 Digit Pin</label>
+                <input 
+                    placeholder="Enter 4 Digit Pin"
+                    type="tel" 
+                    name="Pin" 
+                    id="Pin"
+                    inputmode="numeric"
+                    pattern="\d{4}"
+                    maxlength="4"
+                    class="bg-white rounded-[20px] border border-gray-300 p-2 w-40 sm:w-48 md:w-56 text-center" />
             </div>
-            <button>Login</button>
+            <button id="loginBtn" class="mt-4 w-full sm:w-40 bg-blue-600 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-300">Login</button>
         </section>
-        </section>
+        
 
     </header>
     <main>
     </main>
     <footer>
     </footer>
+    <!-- Tailwind JS CDN -->
+        <script src="./script.js"></script>
 </body>
 
 </html>

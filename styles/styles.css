@@ -1,8 +1,25 @@
+
+.manrope-outfit {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+}
+
 #MobileNumber{
     background-color: white;
     border-radius: 32px;
     border: 1px solid gray;
     padding: 8px;
     width: 256px;
-    align-items: left;
+    
 }
+.btn-primary{
+    gap: 2.5em;
+    border-radius: 32px;
+    padding-x: 20px;
+    padding-y: 14px;
+    color: #0874F2;
+    bacckground-color: #0874F2;
+}
+
